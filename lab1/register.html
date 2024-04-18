@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>이서연</title>
+</head>
+<body>
+
+<header>
+<h1>수영 동아리 가입 양식</h1>
+</header>
+
+<br/>
+
+<form>
+
+<label for="names">이름 </label>
+<input type="text" id="names"><br/>
+
+학부/학과 <input list="major">
+<datalist id="major">
+    <option value="소프트웨어학부"></option>
+    <option value="법학부"></option>
+    <option value="경영학부"></option>
+    <option value="한국어문학부"></option>
+</datalist>
+<br/>
+
+<label for="grade">학년 </label>
+<input type="radio" id="grade" name="your_grade" value="grade">
+<label for="grade">1학년 </label>
+<input type="radio" id="grade" name="your_grade" value="grade">
+<label for="grade">2학년 </label>
+<input type="radio" id="grade" name="your_grade" value="grade">
+<label for="grade">3학년 </label>
+<input type="radio" id="grade" name="your_grade" value="grade">
+<label for="grade">4학년 </label></br>
+
+
+<label for="number">학번 </label>
+<input type="text" id="number"><br/>
+
+<label for="email">이메일 </label>
+<input type="text" id="email"><br/>
+
+<label for="phone">전화번호 </label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br/>
+
+<label for="assign">가입동기 </label>
+<textarea></textarea><br/>
+
+<input type="button" value="가입하기">
+<input type="button" value="취소하기">
+</form>
+</body>
+</html>

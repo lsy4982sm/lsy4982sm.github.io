@@ -1,0 +1,155 @@
+.top_header {
+    display:grid;
+    width:1010px;
+    height:90px;
+    padding: 20px;
+    margin: 10px 10px 10px 40px;
+    background-color:rgb(138, 138, 244);
+    color: white;
+}
+
+.menu{
+    position: absolute;
+    top:110px;
+    left: 0px;
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px 10px 10px 500px;
+    text-align:center;
+}
+
+.navi{
+    display:grid;
+    grid-template-columns: repeat(4. 150px);
+    grid-template-rows: repeat(2, 10px);
+}
+
+.menu a{
+    text-decoration:none;
+    color: white;
+    display:block;
+}
+
+.nav a:hover{
+    background-color: white;
+    color:blue;
+}
+
+#menu1:hover .sub1{
+    visibility:visible;
+}
+
+#menu2:hover .sub2{
+    visibility:visible;
+}
+
+.sub1 {
+    background-color: blue;
+    width: 150px;
+    color: white;
+    display: grid;
+    grid-area: sub1;
+    font-size: 13px;
+    text-align:left;
+    visibility:hidden;
+    
+}
+
+.sub1 li{
+    list-style-type: none;
+}
+
+.sub2 {
+    background-color: blue;
+    width: 150px;
+    color: white;
+    display: grid;
+    grid-area: sub2;
+    font-size: 13px;
+    text-align:left;
+    visibility:hidden;
+}
+
+.sub2 li{
+    list-style-type: none;
+}
+
+
+.login {
+    display:grid;
+    grid-template-rows: 830px;
+    width: 150px;
+    margin: 10px 10px 0px 40px;
+    background-color:rgb(138, 138, 244);
+    float: left;
+}
+
+.login form{
+    margin: 5px 5px 5px 5px;
+    color: white;
+}
+
+.click {
+    margin: 4px 0px 0px 4px;
+}
+
+.ad {
+    display:grid;
+    width: 200px;
+    top: 500px;
+}
+
+.ad article{
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 5px 30px 10px 0px;
+    padding: 0px 10px 10px 10px;
+    background-color: rgb(255, 255, 219);
+}
+
+section{
+    display:grid;
+    width: 700px;
+    float: left;
+}
+
+.card{
+    box-shadow: 5px 2px 3px 2px rgb(153, 153, 255);
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 5px 30px 10px 0px;
+    padding: 0px 10px 10px 10px;
+}
+
+#content {
+    display:inline-block;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.card figure{
+    margin: 0px 7px 0px 0px;
+}
+
+.card p{
+    margin: 0px;
+}
+
+.foot{
+    display: grid;
+    width: 1050px;
+    background-color:rgb(138, 138, 244);
+    margin: 10px 10px 10px 40px;
+}
+
+.foot ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+}
