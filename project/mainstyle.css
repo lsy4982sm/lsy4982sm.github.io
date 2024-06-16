@@ -25,11 +25,10 @@
     text-align:center;
 }
 
-.navi{
+.nav{
     display:grid;
     grid-template-columns: repeat(4. 150px);
     grid-template-rows: repeat(2, 10px);
-    
 }
 
 .menu a{
@@ -41,6 +40,7 @@
 .nav a:hover{
     background-color: white;
     color:rgb(6, 6, 87);
+    text-decoration: underline;
 }
 
 #menu1:hover .sub1{

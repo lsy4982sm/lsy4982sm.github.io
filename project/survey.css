@@ -1,0 +1,49 @@
+  .survey-container {
+    left:500px;
+    top:500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .survey-question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .survey-input input,
+  .survey-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  .survey-input {
+    margin-bottom: 20px;
+  }
+  
+  .survey-submit {
+    text-align: right;
+  }
+  
+  .survey-submit button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .survey-submit button:hover {
+    background-color: #45a049;
+  }
+  
