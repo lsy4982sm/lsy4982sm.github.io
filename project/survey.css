@@ -1,12 +1,17 @@
   .survey-container {
-    left:500px;
-    top:500px;
-    background-color: white;
-    padding: 30px;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color:rgb(201, 230, 255);
+    margin: 100px 0px 200px 400px;
+    padding: 100px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
-    max-width: 600px;
+    max-width: 800px;
+    font-family: "Grandiflora One", cursive;
+    font-weight: 400;
+    font-style: normal;
   }
   
   .survey-question {
@@ -26,7 +31,7 @@
   }
   
   .survey-input {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   
   .survey-submit {
@@ -34,7 +39,7 @@
   }
   
   .survey-submit button {
-    background-color: #4CAF50;
+    background-color: #2c6ec0;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -44,6 +49,6 @@
   }
   
   .survey-submit button:hover {
-    background-color: #45a049;
+    background-color: black;
   }
   
