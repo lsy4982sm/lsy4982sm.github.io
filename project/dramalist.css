@@ -1,0 +1,45 @@
+.image-container {
+    display: inline-block;
+    position: relative;
+    top:100px;
+    left:50px;
+    width: 15%;
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    width: 220px;
+    height: 300px;
+    transition: opacity 0.3s;
+    border-radius:20px;
+  }
+  
+  .image-description {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    width:200px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin:0px;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-family: "Grandiflora One", cursive;
+    font-weight: 1000;
+    font-style: normal;
+  }
+
+  .image-description li {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .image-container:hover .image {
+    opacity: 0.5;
+  }
+  
+  .image-container:hover .image-description {
+    opacity: 1;
+  }

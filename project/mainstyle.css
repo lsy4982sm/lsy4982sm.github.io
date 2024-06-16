@@ -105,7 +105,7 @@
 .foot{
     position: absolute;
     left:250px;
-    top:1000px;
+    top:1200px;
     display: grid;
     width: 1050px;
     margin: 10px 10px 10px 40px;
@@ -118,8 +118,4 @@
     list-style-type: none;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
-}
-
-.foot a{
-    text-decoration: none;
 }
