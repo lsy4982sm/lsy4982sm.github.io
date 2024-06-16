@@ -1,17 +1,23 @@
+* {
+    background-color:rgb(201, 230, 255)
+}
+
 .top_header {
     display:grid;
     width:1010px;
     height:90px;
     padding: 20px;
     margin: 10px 10px 10px 40px;
-    background-color:rgb(138, 138, 244);
-    color: white;
+    font-family: "Grandiflora One", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .menu{
     position: absolute;
     top:110px;
     left: 0px;
+    width: 400px;
     list-style-type: none;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
@@ -23,17 +29,18 @@
     display:grid;
     grid-template-columns: repeat(4. 150px);
     grid-template-rows: repeat(2, 10px);
+    
 }
 
 .menu a{
     text-decoration:none;
-    color: white;
     display:block;
+    width:400px;
 }
 
 .nav a:hover{
     background-color: white;
-    color:blue;
+    color:rgb(6, 6, 87);
 }
 
 #menu1:hover .sub1{
@@ -75,19 +82,20 @@
     list-style-type: none;
 }
 
-
 .login {
     display:grid;
     grid-template-rows: 830px;
     width: 150px;
     margin: 10px 10px 0px 40px;
-    background-color:rgb(138, 138, 244);
     float: left;
+    font-family: "Grandiflora One", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .login form{
     margin: 5px 5px 5px 5px;
-    color: white;
+    color: black;
 }
 
 .click {
@@ -96,20 +104,22 @@
 
 .foot{
     position: absolute;
+    left:250px;
     top:1000px;
     display: grid;
     width: 1050px;
-    background-color:rgb(138, 138, 244);
     margin: 10px 10px 10px 40px;
+    font-family: "Grandiflora One", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .foot ul{
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
 }
 
 .foot a{
     text-decoration: none;
-    color: white;
 }
