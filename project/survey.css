@@ -9,6 +9,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 800px;
+    position:relative;
+    top:100px;
     font-family: "Grandiflora One", cursive;
     font-weight: 400;
     font-style: normal;

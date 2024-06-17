@@ -1,0 +1,31 @@
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    display: inline;
+    grid-gap: 20px;
+    position: relative;
+    justify-content: center;
+    top: 150px;
+    left: 200px;
+    font-family: "Grandiflora One", cursive;
+    font-weight: 1000;
+    font-style: normal;
+
+  }
+
+  .box {
+    width: 400px;
+    height: 150px;
+    border-radius: 5%;
+    margin-bottom:20px;
+    background-color:rgb(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
