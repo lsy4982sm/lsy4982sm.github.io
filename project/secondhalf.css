@@ -1,10 +1,10 @@
-  .box-container {
+.box-container {
     display: inline;
     grid-gap: 20px;
     position: relative;
     justify-content: center;
-    top: 150px;
-    left: 200px;
+    top: 100px;
+    left: 250px;
     font-family: "Grandiflora One", cursive;
     font-weight: 1000;
     font-style: normal;
@@ -12,7 +12,7 @@
   }
 
   .box {
-    width: 400px;
+    width: 600px;
     height: 150px;
     border-radius: 20px 20px 20px 20px;
     margin-bottom:20px;
