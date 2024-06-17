@@ -1,7 +1,6 @@
 
 .image-container {
     display: grid;
-    grid-template-rows: 2fr;
     grid-gap: 10px;
     position:relative;
     top:100px;
