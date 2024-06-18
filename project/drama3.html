@@ -77,9 +77,44 @@
 				<span><li>디즈니+ / 19세 이상 시청가 / #판타지 #스릴러 #한국형히어로 #액션				</li></span>
 				<span><li>출연: 류승룡, 한효주, 이정하, 고윤정 등</li></span>
 				<span><li>줄거리: 초능력을 숨긴 채 현재를 살아가는 아이들과, 과거의 아픈 비밀을 숨긴 채 살아온 부모들이<br> 시대와 세대를 넘어 닥치는 거대한 위험에 함께 맞서는 초능력 액션 히어로물				</li></span>
-				<span><li>촬영지</li></span>
+				<span><li>촬영지: 문경 실내 촬영 스튜디오 등</li></span>
 			</p>
 			</div>
+
+			<div class="map" id="map" style="width:150px; height:150px;
+			left: 250px;
+			top: 60px;
+			position:relative;
+		
+			margin: 10px 10x 10px 10px;
+			opacity: 0.8;"
+		  >
+		</div>
+		
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=917c802f34fb89ed4fcf3e269ed35e1b"></script>
+		<script>
+	
+			var container = document.getElementById('map'); 
+			var options = { 
+				center: new kakao.maps.LatLng(36.638769750034086, 128.17908636925233), //지도의 중심좌표.
+				level: 3 
+				
+			};
+	
+			var map = new kakao.maps.Map(container, options); 
+	
+			// 마커 표시 위치 
+			var markerPosition  = new kakao.maps.LatLng(36.638769750034086, 128.17908636925233); 
+	
+			// 마커 생성
+			var marker = new kakao.maps.Marker({
+				position: markerPosition
+			});
+	
+			// 마커가 지도 위에 표시되도록 설정
+			marker.setMap(map);  
+	
+		</script>
 		  </figure>
 		
 		

@@ -44,3 +44,13 @@
   p > * {
     margin-bottom: 10px;
   }
+
+  .map {
+    left: 80px;
+    top: 85px;
+    position:relative;
+
+    margin: 10px 10x 10px 10px;
+    opacity: 0.8;
+  
+  }

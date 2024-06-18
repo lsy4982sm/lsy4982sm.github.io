@@ -77,9 +77,44 @@
 				<span><li>tvN 토일드라마 / 15세 이상 시청가 / #미스터리 #가족 #범죄</li></span>
 				<span><li>출연: 김고은, 남지현, 박지후 등</li></span>
 				<span><li>줄거리: 가난하지만 우애 있게 자란 세 자매. 그들이 대한민국에서 가장 부유하고 유력한 가문에 각자의 방식으로 맞서는 이야기</li></span>
-				<span><li>촬영지</li></span>
+				<span><li>촬영지: 옥정 호수공원 등</li></span>
 			</p>
 			</div>
+
+			<div class="map" id="map" style="width:150px; height:150px;
+				left: 50px;
+				top: 60px;
+				position:relative;
+			
+				margin: 10px 10x 10px 10px;
+				opacity: 0.8;"
+			  >
+			</div>
+			
+			<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=917c802f34fb89ed4fcf3e269ed35e1b"></script>
+			<script>
+		
+				var container = document.getElementById('map'); 
+				var options = { 
+					center: new kakao.maps.LatLng(37.82454668871669, 127.09672730958346), //지도의 중심좌표.
+					level: 3 
+					
+				};
+		
+				var map = new kakao.maps.Map(container, options); 
+		
+				// 마커 표시 위치 
+				var markerPosition  = new kakao.maps.LatLng(37.82454668871669, 127.09672730958346); 
+		
+				// 마커 생성
+				var marker = new kakao.maps.Marker({
+					position: markerPosition
+				});
+		
+				// 마커가 지도 위에 표시되도록 설정
+				marker.setMap(map);  
+		
+			</script>
 		  </figure>
 		
 		

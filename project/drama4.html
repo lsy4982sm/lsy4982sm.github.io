@@ -77,9 +77,45 @@
 				<span><li>tvN 수목, 토일드라마 / 15세 이상 시청가 / #판타지 #호러 #액션 #로맨스</li></span>
 				<span><li>출연: 이동욱, 조보아, 김범, 김소연 등</li></span>
 				<span><li>줄거리: 도시에 정착한 구미호와 그를 쫓는 프로듀서의 판타지 액션 로맨스(구미호뎐) /<br> 1938년 혼돈의 시대에 불시착한 구미호가 현대로 돌아가기 위해 펼치는 K-판타지 액션 활극 (구미호뎐1938)</li></span>
-				<span><li>촬영지</li></span>
+				<span><li>촬영지: 김포 라베니체 등</li></span>
 			</p>
 			</div>
+
+			<div class="map" id="map" style="width:150px; height:150px;
+			left: 250px;
+			top: 60px;
+			position:relative;
+		
+			margin: 10px 10x 10px 10px;
+			opacity: 0.8;"
+		  >
+		</div>
+		
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=917c802f34fb89ed4fcf3e269ed35e1b"></script>
+		<script>
+	
+			var container = document.getElementById('map'); 
+			var options = { 
+				center: new kakao.maps.LatLng(37.642005798979895, 126.67845347283456), //지도의 중심좌표.
+				level: 3 
+				
+			};
+	
+			var map = new kakao.maps.Map(container, options); 
+	
+			// 마커 표시 위치 
+			var markerPosition  = new kakao.maps.LatLng(37.642005798979895, 126.67845347283456); 
+	
+			// 마커 생성
+			var marker = new kakao.maps.Marker({
+				position: markerPosition
+			});
+	
+			// 마커가 지도 위에 표시되도록 설정
+			marker.setMap(map);  
+	
+		</script>
+
 		  </figure>
 		
 		

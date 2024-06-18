@@ -1,5 +1,5 @@
-* {
-    background-color:rgb(201, 230, 255)
+body {
+    background-color:rgb(201, 230, 255) !important
 }
 
 .top_header {
@@ -52,7 +52,7 @@
 }
 
 .sub1 {
-    background-color: blue;
+
     width: 150px;
     color: white;
     display: grid;
@@ -69,7 +69,7 @@
 }
 
 .sub2 {
-    background-color: blue;
+
     width: 150px;
     color: white;
     display: grid;

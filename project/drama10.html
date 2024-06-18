@@ -77,9 +77,44 @@
 				<span><li>tvN 월화드라마 / 15세 이상 시청가 / #판타지 #로맨스 #가족 #음악</li></span>
 				<span><li>출연: 려운, 설인아, 신은수, 최현욱 등</li></span>
 				<span><li>줄거리: 음악에 천부적인 재능을 타고난 코다(CODA) 소년 은결이 1995년으로 타임슬립해<br> 어린 시절의 아빠와 함께 밴드를 하며 펼쳐지는 판타지 청춘 드라마</li></span>
-				<span><li>촬영지</li></span>
+				<span><li>촬영지: 경주 근화여고 등</li></span>
 			</p>
 			</div>
+
+			<div class="map" id="map" style="width:150px; height:150px;
+			left: 250px;
+			top: 50px;
+			position:relative;
+		
+			margin: 10px 10x 10px 10px;
+			opacity: 0.8;"
+		  >
+		</div>
+		
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=917c802f34fb89ed4fcf3e269ed35e1b"></script>
+		<script>
+	
+			var container = document.getElementById('map'); 
+			var options = { 
+				center: new kakao.maps.LatLng(35.87184631304955, 129.2273940686651), //지도의 중심좌표.
+				level: 3 
+				
+			};
+	
+			var map = new kakao.maps.Map(container, options); 
+	
+			// 마커 표시 위치 
+			var markerPosition  = new kakao.maps.LatLng(35.87184631304955, 129.2273940686651); 
+	
+			// 마커 생성
+			var marker = new kakao.maps.Marker({
+				position: markerPosition
+			});
+	
+			// 마커가 지도 위에 표시되도록 설정
+			marker.setMap(map);  
+	
+		</script>
 		  </figure>
 		
 		

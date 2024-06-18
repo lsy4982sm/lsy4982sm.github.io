@@ -77,9 +77,44 @@
 				<span><li>tvN 수목드라마 / 15세 이상 시청가 / #오피스 #우정 #로맨스</li></span>
 				<span><li>출연: 임수정, 전혜진, 이다희 등</li></span>
 				<span><li>줄거리: 트렌드를 이끄는 포털사이트, 그 안에서 당당하게 일하는 여자들과 그들을 둘러싼 우정, 그리고 로맨스</li></span>
-				<span><li>촬영지</li></span>
+				<span><li>촬영지: 전주 맹꽁이 오락실 등</li></span>
 			</p>
 			</div>
+
+			<div class="map" id="map" style="width:150px; height:150px;
+			left: 250px;
+			top: 60px;
+			position:relative;
+		
+			margin: 10px 10x 10px 10px;
+			opacity: 0.8;"
+		  >
+		</div>
+		
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=917c802f34fb89ed4fcf3e269ed35e1b"></script>
+		<script>
+	
+			var container = document.getElementById('map'); 
+			var options = { 
+				center: new kakao.maps.LatLng(35.81956115141822, 127.15340770543426), //지도의 중심좌표.
+				level: 3 
+				
+			};
+	
+			var map = new kakao.maps.Map(container, options); 
+	
+			// 마커 표시 위치 
+			var markerPosition  = new kakao.maps.LatLng(35.81956115141822, 127.15340770543426); 
+	
+			// 마커 생성
+			var marker = new kakao.maps.Marker({
+				position: markerPosition
+			});
+	
+			// 마커가 지도 위에 표시되도록 설정
+			marker.setMap(map);  
+	
+		</script>
 		  </figure>
 		
 		

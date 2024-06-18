@@ -78,9 +78,45 @@
 				<span><li>tvN 토일드라마 / 15세 이상 시청가 / #범죄 #스릴러 #법정</li></span>
 				<span><li>출연: 조승우, 배두나 등</li></span>
 				<span><li>줄거리: 감정을 느끼지 못하는 외톨이 검사 황시목이, 정의롭고 따뜻한 형사 한여진과 함께 검찰 스폰서 살인사건과<br> 그 이면에 숨겨진 진실을 파헤치는 내부 비밀 추적극</li></span>
-				<span><li>촬영지</li></span>
+				<span><li>촬영지: 마포 경찰서 옆 등</li></span>
 			</p>
 			</div>
+			
+			<div class="map" id="map" style="width:150px; height:150px;
+				left: 250px;
+				top: 60px;
+				position:relative;
+			
+				margin: 10px 10x 10px 10px;
+				opacity: 0.8;"
+			  >
+			</div>
+			
+			<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=917c802f34fb89ed4fcf3e269ed35e1b"></script>
+			<script>
+		
+				var container = document.getElementById('map'); 
+				var options = { 
+					center: new kakao.maps.LatLng(37.55077049087208, 126.95419877577001), //지도의 중심좌표.
+					level: 3 
+					
+				};
+		
+				var map = new kakao.maps.Map(container, options); 
+		
+				// 마커 표시 위치 
+				var markerPosition  = new kakao.maps.LatLng(37.55077049087208, 126.95419877577001); 
+		
+				// 마커 생성
+				var marker = new kakao.maps.Marker({
+					position: markerPosition
+				});
+		
+				// 마커가 지도 위에 표시되도록 설정
+				marker.setMap(map);  
+		
+			</script>
+			
 		  </figure>
 		
 		

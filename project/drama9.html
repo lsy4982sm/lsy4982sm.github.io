@@ -77,9 +77,44 @@
 				<span><li>SBS 월화드라마 / 15세 이상 시청가 / #로맨스 #코미디</li></span>
 				<span><li>출연: 양세종, 신혜선, 안효섭 등</li></span>
 				<span><li>줄거리: 끔찍한 사고로 인생이 뒤틀려버린 두 남녀가 만나, 또 다른 행복의 문을 있는 힘껏 열어보려 함께 애쓰는 이야기</li></span>
-				<span><li>촬영지</li></span>
+				<span><li>촬영지: 한국거래소 앞 등</li></span>
 			</p>
 			</div>
+
+			<div class="map" id="map" style="width:150px; height:150px;
+			left: 250px;
+			top: 60px;
+			position:relative;
+		
+			margin: 10px 10x 10px 10px;
+			opacity: 0.8;"
+		  >
+		</div>
+		
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=917c802f34fb89ed4fcf3e269ed35e1b"></script>
+		<script>
+	
+			var container = document.getElementById('map'); 
+			var options = { 
+				center: new kakao.maps.LatLng(37.52285345759269, 126.9280247917334), //지도의 중심좌표.
+				level: 3 
+				
+			};
+	
+			var map = new kakao.maps.Map(container, options); 
+	
+			// 마커 표시 위치 
+			var markerPosition  = new kakao.maps.LatLng(37.52285345759269, 126.9280247917334); 
+	
+			// 마커 생성
+			var marker = new kakao.maps.Marker({
+				position: markerPosition
+			});
+	
+			// 마커가 지도 위에 표시되도록 설정
+			marker.setMap(map);  
+	
+		</script>
 		  </figure>
 		
 		

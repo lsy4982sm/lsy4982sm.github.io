@@ -77,9 +77,44 @@
 				<span><li>MBC 월화드라마 / 15세 이상 시청가 / #미스터리 #스릴러 #판타지</li></span>
 				<span><li>출연: 남지현, 이준혁 등</li></span>
 				<span><li>줄거리: "1년 전 과거에서 뵙겠습니다." 완벽한 인생을 꿈꾸며 1년 전으로 돌아간 순간, 더 알 수 없는 운명에 갇혀 버린 자들의 미스터리 생존 게임</li></span>
-				<span><li>촬영지</li></span>
+				<span><li>촬영지: 아산 모나무르 등</li></span>
 			</p>
 			</div>
+
+			<div class="map" id="map" style="width:150px; height:150px;
+			left: 250px;
+			top: 60px;
+			position:relative;
+		
+			margin: 10px 10x 10px 10px;
+			opacity: 0.8;"
+		  >
+		</div>
+		
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=917c802f34fb89ed4fcf3e269ed35e1b"></script>
+		<script>
+	
+			var container = document.getElementById('map'); 
+			var options = { 
+				center: new kakao.maps.LatLng(36.75071496724647, 126.99229855386827), //지도의 중심좌표.
+				level: 3 
+				
+			};
+	
+			var map = new kakao.maps.Map(container, options); 
+	
+			// 마커 표시 위치 
+			var markerPosition  = new kakao.maps.LatLng(36.75071496724647, 126.99229855386827); 
+	
+			// 마커 생성
+			var marker = new kakao.maps.Marker({
+				position: markerPosition
+			});
+	
+			// 마커가 지도 위에 표시되도록 설정
+			marker.setMap(map);  
+	
+		</script>
 		  </figure>
 		
 		
