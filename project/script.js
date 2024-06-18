@@ -64,3 +64,28 @@ document.getElementById('m6').addEventListener('click', function() {
   navigateTo('menu6.html');
 });
 
+
+//회원 가입 창 띄우기
+const signupBtn = document.getElementById('signup-btn');
+const signupModal = document.getElementById('signup-modal');
+const signupForm = document.getElementById('signup-form');
+
+signupBtn.addEventListener('click', () => {
+  window.open('signup.html', '_blank');
+});
+
+
+signupForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  // 여기에 사용자 정보를 저장하는 로직을 추가하세요.
+  console.log('사용자 정보:', { username, password, name, email });
+
+  signupModal.style.display = 'none';
+  signupForm.reset();
+});

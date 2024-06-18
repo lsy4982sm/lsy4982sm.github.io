@@ -95,7 +95,24 @@ body {
     font-style: normal;
 }
 
+.signup {
+
+    display:grid;
+    grid-template-rows: 830px;
+    width: 150px;
+    margin: 10px 10px 0px 40px;
+    float: left;
+    font-family: "Grandiflora One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .login form{
+    margin: 5px 5px 5px 5px;
+    color: black;
+}
+
+.signup form{
     margin: 5px 5px 5px 5px;
     color: black;
 }
