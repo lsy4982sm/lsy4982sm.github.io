@@ -109,6 +109,13 @@ function saveAndUpdateName() {
     updateWelcomeMessage(name);
     nameInput.style.display = "none";
     document.getElementById("namebtn").style.display = "none";
+
+    // Cache-Control 헤더 설정
+    fetch('script.js', {
+      headers: {
+        'Cache-Control': 'max-age=3600'
+      }
+    });
   }
 }
 
@@ -119,6 +126,13 @@ window.onload = function() {
     updateWelcomeMessage(savedName);
     document.getElementById("nameInput").style.display = "none";
     document.getElementById("namebtn").style.display = "none";
+
+    // Cache-Control 헤더 설정
+    fetch('script.js', {
+      headers: {
+        'Cache-Control': 'max-age=3600'
+      }
+    });
   } else {
     document.getElementById("nameInput").style.display = "block";
     document.getElementById("namebtn").style.display = "inline-block";
