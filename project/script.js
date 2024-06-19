@@ -65,11 +65,65 @@ document.getElementById('m6').addEventListener('click', function() {
 });
 
 
-//회원 가입 창 띄우기
-const signupBtn = document.getElementById('signup-btn');
-const signupModal = document.getElementById('signup-modal');
-const signupForm = document.getElementById('signup-form');
+// 쿠키에 이름 저장하기
+function saveNameToCookie(name) {
+  let expirationDate = new Date();
+  expirationDate.setDate(expirationDate.getDate() + 30); 
+  document.cookie = "name=" + encodeURIComponent(name) + "; expires=" + expirationDate.toUTCString();
+}
 
-signupBtn.addEventListener('click', () => {
-  window.open('signup.html', '_blank');
-});
+// 쿠키에서 이름 가져오기
+function getNameFromCookie() {
+  let name = null;
+  let cookies = document.cookie.split(";");
+  for (let i = 0; i < cookies.length; i++) {
+    let cookie = cookies[i].trim();
+    if (cookie.startsWith("name=")) {
+      name = decodeURIComponent(cookie.substring(5));
+      break;
+    }
+  }
+  return name;
+}
+
+// welcome message 업데이트
+function updateWelcomeMessage(name) {
+  let welcomeMessage = document.querySelector(".welcome-message");
+
+  if (!welcomeMessage) {
+    welcomeMessage = document.createElement("div");
+    welcomeMessage.classList.add("welcome-message");
+    document.body.appendChild(welcomeMessage);
+  }
+
+  welcomeMessage.innerHTML = name + "님";
+}
+
+// 이름 저장 및 화면 업데이트
+function saveAndUpdateName() {
+  let nameInput = document.getElementById("nameInput");
+  let name = nameInput.value.trim();
+
+  if (name !== "") {
+    saveNameToCookie(name);
+    updateWelcomeMessage(name);
+    nameInput.style.display = "none";
+    document.getElementById("namebtn").style.display = "none";
+  }
+}
+
+// 페이지 로드 시 welcome message 표시 및 입력 필드/버튼 상태 제어
+window.onload = function() {
+  let savedName = getNameFromCookie();
+  if (savedName) {
+    updateWelcomeMessage(savedName);
+    document.getElementById("nameInput").style.display = "none";
+    document.getElementById("namebtn").style.display = "none";
+  } else {
+    document.getElementById("nameInput").style.display = "block";
+    document.getElementById("namebtn").style.display = "inline-block";
+  }
+};
+
+// 버튼 클릭 이벤트 리스너 추가
+document.getElementById("namebtn").addEventListener("click", saveAndUpdateName);
