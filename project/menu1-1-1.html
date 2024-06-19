@@ -55,18 +55,18 @@
 		  
     </header>
 
-		<aside class="login">
-			<form>
-				<label for="user">아이디</label><br>
-				<input type="text" id="user" size="15"><br>
-				<label for="pass">비밀번호</label><br>
-				<input type="password" id="pass" size="15"><br>
-				<div class="click">
-				<input type="submit" value="로그인">
-				<a href="signup.html" target="_blank"><input type="button" value="회원가입"></a>
-				</div>
-			</form>			
-		</aside>
+	<aside class="login">
+		<form id="login-form">
+			<label for="nameInput">방문자 이름 :</label>
+			<div class="welcome-message"></div>
+			<br>
+			<input type="text" id="nameInput" placeholder="이름을 입력하세요">
+			<br>
+		
+			<br>
+			<button onclick="saveAndUpdateName()" id="namebtn">입력</button>
+		</form>			
+	</aside>
 		
 		<div class="box-container">
 			<div>다음 중 당신에게 더 끌리는 드라마는?
