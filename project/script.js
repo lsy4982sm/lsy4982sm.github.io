@@ -12,37 +12,6 @@ document.getElementById('m2').addEventListener('click', function() {
   navigateTo('menu2.html');
 });
 
-/*menu2 전체 추천 목록에서 이미지 누르면 드라마 소개로 이동*/
-document.getElementById('img1').addEventListener('click', function() {
-  navigateTo('drama1.html');
-});
-document.getElementById('img2').addEventListener('click', function() {
-  navigateTo('drama2.html');
-});
-document.getElementById('img3').addEventListener('click', function() {
-  navigateTo('drama3.html');
-});
-document.getElementById('img4').addEventListener('click', function() {
-  navigateTo('drama4.html');
-});
-document.getElementById('img5').addEventListener('click', function() {
-  navigateTo('drama5.html');
-});
-document.getElementById('img6').addEventListener('click', function() {
-  navigateTo('drama6.html');
-});
-document.getElementById('img7').addEventListener('click', function() {
-  navigateTo('drama7.html');
-});
-document.getElementById('img8').addEventListener('click', function() {
-  navigateTo('drama8.html');
-});
-document.getElementById('img9').addEventListener('click', function() {
-  navigateTo('drama9.html');
-});
-document.getElementById('img10').addEventListener('click', function() {
-  navigateTo('drama10.html');
-});
 
 /*menu3 : 나의 인생 드라마*/
 document.getElementById('m3').addEventListener('click', function() {
@@ -96,7 +65,7 @@ function updateWelcomeMessage(name) {
     document.body.appendChild(welcomeMessage);
   }
 
-  welcomeMessage.innerHTML = name + "님";
+  welcomeMessage.innerHTML = name + "님<br>환영합니다.";
 }
 
 // 이름 저장 및 화면 업데이트
@@ -110,7 +79,7 @@ function saveAndUpdateName() {
     nameInput.style.display = "none";
     document.getElementById("namebtn").style.display = "none";
 
-    // Cache-Control 헤더 설정
+
     fetch('script.js', {
       headers: {
         'Cache-Control': 'max-age=3600'
@@ -119,7 +88,7 @@ function saveAndUpdateName() {
   }
 }
 
-// 페이지 로드 시 welcome message 표시 및 입력 필드/버튼 상태 제어
+// 페이지 로드 시 welcome message 표시
 window.onload = function() {
   let savedName = getNameFromCookie();
   if (savedName) {
@@ -127,7 +96,6 @@ window.onload = function() {
     document.getElementById("nameInput").style.display = "none";
     document.getElementById("namebtn").style.display = "none";
 
-    // Cache-Control 헤더 설정
     fetch('script.js', {
       headers: {
         'Cache-Control': 'max-age=3600'
@@ -139,5 +107,5 @@ window.onload = function() {
   }
 };
 
-// 버튼 클릭 이벤트 리스너 추가
+
 document.getElementById("namebtn").addEventListener("click", saveAndUpdateName);
